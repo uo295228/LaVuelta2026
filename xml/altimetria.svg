@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="2.0" width="1200" height="750">
+  <rect x="0" y="0" width="1200" height="750" fill="white" stroke="#ccc" strokeWidth="1" />
+  <text x="600.0" y="45" fontFamily="Verdana" fontSize="20" style="text-anchor: middle; font-weight: bold; fill: #111;">Perfil Altimétrico - Etapa 11: Cartagena - Lorca (La Vuelta)</text>
+  <line x1="80" y1="470" x2="1120" y2="470" stroke="black" strokeWidth="2" />
+  <polyline points="80,470 80.0,450.9875 98.9336801040312,452.9375 153.02990897269183,460.25 176.02080624187255,462.6875 235.5266579973992,465.125 269.3368010403121,467.5625 286.91807542262677,462.6875 324.7854356306892,465.125 364.0052015604681,460.25 407.95838751625485,452.45 445.149544863459,435.875 476.25487646293885,428.5625 499.24577373211963,423.6875 526.29388816645,421.25 548.6085825747723,416.375 593.2379713914174,407.6 639.219765929779,399.3125 670.3250975292588,392.0 723.7451235370611,387.125 747.4122236671001,382.25 755.5266579973992,377.375 804.2132639791936,367.625 836.6710013003901,360.3125 903.6150845253575,166.28749999999997 992.8738621586475,250.625 1048.9986996098828,284.75 1074.0182054616384,299.375 1120.0,305.7125 1120,470 80,470" style="fill: #ffcccc; stroke: red; stroke-width:4" />
+  <line x1="80.0" y1="470" x2="80.0" y2="450.9875" stroke="#666" strokeWidth="1" strokeDasharray="3,3" />
+  <circle cx="80.0" cy="450.9875" r="4" fill="black" />
+  <text x="80.0" y="485" fontFamily="Verdana" fontSize="12" style="writing-mode: tb; glyph-orientation-vertical: 0;">Salida: Cartagena (39m)</text>
+  <line x1="836.6710013003901" y1="470" x2="836.6710013003901" y2="360.3125" stroke="#666" strokeWidth="1" strokeDasharray="3,3" />
+  <circle cx="836.6710013003901" cy="360.3125" r="4" fill="black" />
+  <text x="836.6710013003901" y="485" fontFamily="Verdana" fontSize="12" style="writing-mode: tb; glyph-orientation-vertical: 0;">Sprint Intermedio Totana (225m)</text>
+  <line x1="903.6150845253575" y1="470" x2="903.6150845253575" y2="166.28749999999997" stroke="#666" strokeWidth="1" strokeDasharray="3,3" />
+  <circle cx="903.6150845253575" cy="166.28749999999997" r="4" fill="black" />
+  <text x="903.6150845253575" y="485" fontFamily="Verdana" fontSize="12" style="writing-mode: tb; glyph-orientation-vertical: 0;">Alto de Aledo (623m)</text>
+  <line x1="1120.0" y1="470" x2="1120.0" y2="305.7125" stroke="#666" strokeWidth="1" strokeDasharray="3,3" />
+  <circle cx="1120.0" cy="305.7125" r="4" fill="black" />
+  <text x="1120.0" y="485" fontFamily="Verdana" fontSize="12" style="writing-mode: tb; glyph-orientation-vertical: 0;">Meta: Lorca (337m)</text>
+</svg>

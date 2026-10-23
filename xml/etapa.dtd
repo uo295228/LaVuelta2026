@@ -1,0 +1,68 @@
+
+<!ELEMENT etapa (nombre, numero, tipo, fecha, longitud, desnivel, ciudad_salida, ciudad_llegada, tiempo_ganador, velocidad_media_ganador, referencias, galeria_fotografias, galeria_videos, galeria_sonidos, coordenadas_salida, coordenadas_llegada, hitos, puntos_anonimos, clasificaciones)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT ciudad_salida (#PCDATA)>
+<!ELEMENT ciudad_llegada (#PCDATA)>
+<!ELEMENT tiempo_ganador (#PCDATA)>
+
+<!ELEMENT longitud (#PCDATA)>
+<!ATTLIST longitud unidad CDATA #REQUIRED>
+<!ELEMENT desnivel (#PCDATA)>
+<!ATTLIST desnivel unidad CDATA #REQUIRED>
+<!ELEMENT velocidad_media_ganador (#PCDATA)>
+<!ATTLIST velocidad_media_ganador unidad CDATA #REQUIRED>
+
+
+<!ELEMENT referencias (referencia, referencia, referencia+)>
+<!ELEMENT referencia (#PCDATA)>
+
+
+<!ELEMENT galeria_fotografias (fotografia+)>
+<!ELEMENT fotografia (#PCDATA)>
+<!ELEMENT galeria_videos (video+)>
+<!ELEMENT video (#PCDATA)>
+<!ELEMENT galeria_sonidos (audio+)>
+<!ELEMENT audio (#PCDATA)>
+
+
+<!ELEMENT coordenadas_salida (longitud_geo, latitud_geo, altitud)>
+<!ELEMENT coordenadas_llegada (longitud_geo, latitud_geo, altitud)>
+
+
+<!ELEMENT longitud_geo (#PCDATA)>
+<!ATTLIST longitud_geo unidad CDATA #REQUIRED>
+<!ELEMENT latitud_geo (#PCDATA)>
+<!ATTLIST latitud_geo unidad CDATA #REQUIRED>
+<!ELEMENT altitud (#PCDATA)>
+<!ATTLIST altitud unidad CDATA #REQUIRED>
+
+
+<!ELEMENT hitos (hito+)>
+<!ELEMENT hito (nombre_hito, tipo_hito, distancia_salida, longitud_geo, latitud_geo, altitud)>
+<!ELEMENT nombre_hito (#PCDATA)>
+<!ELEMENT tipo_hito (#PCDATA)>
+<!ELEMENT distancia_salida (#PCDATA)>
+<!ATTLIST distancia_salida unidad CDATA #REQUIRED>
+
+
+<!ELEMENT puntos_anonimos (punto*)>
+<!ELEMENT punto (distancia_salida, longitud_geo, latitud_geo, altitud)>
+
+
+<!ELEMENT clasificaciones (clasificacion_etapa, clasificacion_general, clasificacion_equipos)>
+<!ELEMENT clasificacion_etapa (clasificado, clasificado, clasificado)>
+<!ELEMENT clasificacion_general (clasificado, clasificado, clasificado)>
+<!ELEMENT clasificacion_equipos (clasificado_equipo, clasificado_equipo, clasificado_equipo)>
+
+<!ELEMENT clasificado (nombre_ciclista, tiempo_diferencia)>
+<!ATTLIST clasificado posicion CDATA #REQUIRED>
+<!ELEMENT nombre_ciclista (#PCDATA)>
+<!ELEMENT tiempo_diferencia (#PCDATA)>
+
+<!ELEMENT clasificado_equipo (nombre_equipo, tiempo_diferencia)>
+<!ATTLIST clasificado_equipo posicion CDATA #REQUIRED>
+<!ELEMENT nombre_equipo (#PCDATA)>

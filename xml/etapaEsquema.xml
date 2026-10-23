@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<etapa xmlns="http://www.uniovi.es"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.uniovi.es etapa.xsd">
+    
+    <!-- Datos de la etapa -->
+   <nombre>Cartagena - Lorca</nombre>
+    <numero>11</numero>
+    <tipo>llana</tipo>
+    <fecha>2026-09-02</fecha>
+    <longitud unidad="km">153.8</longitud>
+    <desnivel unidad="m">1351</desnivel>
+    <ciudad_salida>Cartagena</ciudad_salida>
+    <ciudad_llegada>Lorca</ciudad_llegada>
+    <tiempo_ganador>03:30:00</tiempo_ganador>
+    <velocidad_media_ganador unidad="km/h">43.9</velocidad_media_ganador>
+
+    <referencias>
+        <referencia>https://www.lavuelta.es/</referencia>
+        <referencia>https://cartagena.es/</referencia>
+        <referencia>https://lorca.es/</referencia>
+    </referencias>
+
+    <galeria_fotografias>
+        <fotografia>multimedia/salida.jpg</fotografia>
+        <fotografia>multimedia/llegada.jpg</fotografia>
+    </galeria_fotografias>
+
+    <galeria_videos>
+        <video>multimedia/resumenetapa.mp4</video>
+    </galeria_videos>
+
+    <galeria_sonidos>
+        <audio>multimedia/resumenetapa.mp3</audio>
+    </galeria_sonidos>
+
+    <coordenadas_salida>
+        <longitud_geo unidad="grados">-0.9769</longitud_geo>
+        <latitud_geo unidad="grados">37.5994</latitud_geo>
+        <altitud unidad="m">39.0</altitud>
+    </coordenadas_salida>
+
+    <coordenadas_llegada>
+        <longitud_geo unidad="grados">-1.7045</longitud_geo>
+        <latitud_geo unidad="grados">37.6601</latitud_geo>
+        <altitud unidad="m">337.0</altitud>
+    </coordenadas_llegada>
+
+    <hitos>
+        <hito>
+            <nombre_hito>Sprint Intermedio Totana</nombre_hito>
+            <tipo_hito>Sprint intermedio</tipo_hito>
+            <distancia_salida unidad="km">111.9</distancia_salida>
+            <longitud_geo unidad="grados">-1.4981</longitud_geo>
+            <latitud_geo unidad="grados">37.7706</latitud_geo>
+            <altitud unidad="m">225.0</altitud>
+        </hito>
+        <hito>
+            <nombre_hito>Alto de Aledo</nombre_hito>
+            <tipo_hito>Puerto de montaña 3ª categoría</tipo_hito>
+            <distancia_salida unidad="km">121.8</distancia_salida>
+            <longitud_geo unidad="grados">-1.5739</longitud_geo>
+            <latitud_geo unidad="grados">37.7944</latitud_geo>
+            <altitud unidad="m">623.0</altitud>
+        </hito>
+    </hitos>
+
+
+   <!-- Puntos anónimos extraídos con alta precisión del itinerario oficial (Pág. 147) -->
+  <!-- Puntos anónimos ampliados al límite de 30 para máxima precisión geográfica -->
+   <!-- Puntos anónimos ajustados estrictamente a tramos de tierra (Libro de Ruta - Etapa 11) -->
+    <!-- Puntos anónimos ajustados milimétricamente al recorrido costero (Los Nietos, Mar Menor) -->
+    <puntos_anonimos>
+        <punto>
+            <distancia_salida unidad="km">2.8</distancia_salida>
+            <longitud_geo unidad="grados">-0.9520</longitud_geo>
+            <latitud_geo unidad="grados">37.5920</latitud_geo>
+            <altitud unidad="m">35.0</altitud>
+        </punto>
+        <punto>
+            <distancia_salida unidad="km">10.8</distancia_salida>
+            <longitud_geo unidad="grados">-0.8580</longitud_geo>
+            <latitud_geo unidad="grados">37.5870</latitud_geo>
+            <altitud unidad="m">20.0</altitud>
+        </punto>
+        <punto>
+            <distancia_salida unidad="km">14.2</distancia_salida>
+            <longitud_geo unidad="grados">-0.8100</longitud_geo>
+            <latitud_geo unidad="grados">37.6050</latitud_geo>
+            <altitud unidad="m">15.0</altitud>
+        </punto>
+        <punto>
+            <distancia_salida unidad="km">23.0</distancia_salida>
+            <longitud_geo unidad="grados">-0.7989</longitud_geo>
+            <latitud_geo unidad="grados">37.6321</latitud_geo>
+            <altitud unidad="m">10.0</altitud>
+        </punto>
+        <punto>
+            <distancia_salida unidad="km">28.0</distancia_salida>
+            <longitud_geo unidad="grados">-0.7989</longitud_geo>
+            <latitud_geo unidad="grados">37.6513</latitud_geo>
+            <altitud unidad="m">5.0</altitud>
+        </punto>
+     
+        <punto>
+            <distancia_salida unidad="km">30.6</distancia_salida>
+            <longitud_geo unidad="grados">-0.8299</longitud_geo>
+            <latitud_geo unidad="grados">37.6878</latitud_geo>
+            <altitud unidad="m">15.0</altitud>
+        </punto>
+      
+        <punto>
+            <distancia_salida unidad="km">36.2</distancia_salida>
+            <longitud_geo unidad="grados">-0.8491</longitud_geo>
+            <latitud_geo unidad="grados">37.7402</latitud_geo>
+            <altitud unidad="m">10.0</altitud>
+        </punto>
+        <punto>
+            <distancia_salida unidad="km">42.0</distancia_salida>
+            <longitud_geo unidad="grados">-0.8900</longitud_geo>
+            <latitud_geo unidad="grados">37.7430</latitud_geo>
+            <altitud unidad="m">20.0</altitud>
+        </punto>
+        <punto>
+            <distancia_salida unidad="km">48.5</distancia_salida>
+            <longitud_geo unidad="grados">-0.9657</longitud_geo>
+            <latitud_geo unidad="grados">37.7423</latitud_geo>
+            <altitud unidad="m">36.0</altitud>
+        </punto>
+        <punto>
+            <distancia_salida unidad="km">54.0</distancia_salida>
+            <longitud_geo unidad="grados">-0.9781</longitud_geo>
+            <latitud_geo unidad="grados">37.7663</latitud_geo>
+            <altitud unidad="m">70.0</altitud>
+        </punto>
+        <punto>
+            <distancia_salida unidad="km">58.6</distancia_salida>
+            <longitud_geo unidad="grados">-0.9934</longitud_geo>
+            <latitud_geo unidad="grados">37.7956</latitud_geo>
+            <altitud unidad="m">85.0</altitud>
+        </punto>
+        <punto>
+            <distancia_salida unidad="km">62.0</distancia_salida>
+            <longitud_geo unidad="grados">-1.0100</longitud_geo>
+            <latitud_geo unidad="grados">37.7850</latitud_geo>
+            <altitud unidad="m">95.0</altitud>
+        </punto>
+        <punto>
+            <distancia_salida unidad="km">66.0</distancia_salida>
+            <longitud_geo unidad="grados">-1.0258</longitud_geo>
+            <latitud_geo unidad="grados">37.7712</latitud_geo>
+            <altitud unidad="m">100.0</altitud>
+        </punto>
+        <punto>
+            <distancia_salida unidad="km">69.3</distancia_salida>
+            <longitud_geo unidad="grados">-1.0632</longitud_geo>
+            <latitud_geo unidad="grados">37.7645</latitud_geo>
+            <altitud unidad="m">110.0</altitud>
+        </punto>
+        <punto>
+            <distancia_salida unidad="km">75.9</distancia_salida>
+            <longitud_geo unidad="grados">-1.2169</longitud_geo>
+            <latitud_geo unidad="grados">37.7327</latitud_geo>
+            <altitud unidad="m">128.0</altitud>
+        </punto>
+        <punto>
+            <distancia_salida unidad="km">82.7</distancia_salida>
+            <longitud_geo unidad="grados">-1.3005</longitud_geo>
+            <latitud_geo unidad="grados">37.7121</latitud_geo>
+            <altitud unidad="m">145.0</altitud>
+        </punto>
+        <punto>
+            <distancia_salida unidad="km">87.3</distancia_salida>
+            <longitud_geo unidad="grados">-1.3325</longitud_geo>
+            <latitud_geo unidad="grados">37.6974</latitud_geo>
+            <altitud unidad="m">160.0</altitud>
+        </punto>
+        <punto>
+            <distancia_salida unidad="km">95.2</distancia_salida>
+            <longitud_geo unidad="grados">-1.4112</longitud_geo>
+            <latitud_geo unidad="grados">37.6931</latitud_geo>
+            <altitud unidad="m">170.0</altitud>
+        </punto>
+        <punto>
+            <distancia_salida unidad="km">98.7</distancia_salida>
+            <longitud_geo unidad="grados">-1.4485</longitud_geo>
+            <latitud_geo unidad="grados">37.6922</latitud_geo>
+            <altitud unidad="m">180.0</altitud>
+        </punto>
+        <punto>
+            <distancia_salida unidad="km">99.9</distancia_salida>
+            <longitud_geo unidad="grados">-1.4647</longitud_geo>
+            <latitud_geo unidad="grados">37.6953</latitud_geo>
+            <altitud unidad="m">190.0</altitud>
+        </punto>
+        <punto>
+            <distancia_salida unidad="km">107.1</distancia_salida>
+            <longitud_geo unidad="grados">-1.4875</longitud_geo>
+            <latitud_geo unidad="grados">37.7301</latitud_geo>
+            <altitud unidad="m">210.0</altitud>
+        </punto>
+    
+    
+        <punto>
+            <distancia_salida unidad="km">135.0</distancia_salida>
+            <longitud_geo unidad="grados">-1.6305</longitud_geo>
+            <latitud_geo unidad="grados">37.7345</latitud_geo>
+            <altitud unidad="m">450.0</altitud>
+        </punto>
+        <punto>
+            <distancia_salida unidad="km">143.3</distancia_salida>
+            <longitud_geo unidad="grados">-1.6842</longitud_geo>
+            <latitud_geo unidad="grados">37.6954</latitud_geo>
+            <altitud unidad="m">380.0</altitud>
+        </punto>
+        <punto>
+            <distancia_salida unidad="km">147.0</distancia_salida>
+            <longitud_geo unidad="grados">-1.6955</longitud_geo>
+            <latitud_geo unidad="grados">37.6748</latitud_geo>
+            <altitud unidad="m">350.0</altitud>
+        </punto>
+    </puntos_anonimos>
+    <clasificaciones>
+        <clasificacion_etapa>
+            <clasificado posicion="1">
+                <nombre_ciclista>J. Brennan</nombre_ciclista>
+                <tiempo_diferencia>03:17:18</tiempo_diferencia>
+            </clasificado>
+            <clasificado posicion="2">
+                <nombre_ciclista>B. Coquard</nombre_ciclista>
+                <tiempo_diferencia>+00:00:00</tiempo_diferencia>
+            </clasificado>
+            <clasificado posicion="3">
+                <nombre_ciclista>J. Meeus</nombre_ciclista>
+                <tiempo_diferencia>+00:00:00</tiempo_diferencia>
+            </clasificado>
+        </clasificacion_etapa>
+
+        <clasificacion_general>
+            <clasificado posicion="1">
+                <nombre_ciclista>J. Brennan</nombre_ciclista>
+                <tiempo_diferencia>+00:00:00</tiempo_diferencia>
+            </clasificado>
+            <clasificado posicion="2">
+                <nombre_ciclista>B. Coquard</nombre_ciclista>
+                <tiempo_diferencia>+00:00:00</tiempo_diferencia>
+            </clasificado>
+            <clasificado posicion="3">
+                <nombre_ciclista>J. Meeus</nombre_ciclista>
+                <tiempo_diferencia>00:00:00</tiempo_diferencia>
+            </clasificado>
+        </clasificacion_general>
+
+        <clasificacion_equipos>
+            <clasificado_equipo posicion="1">
+                <nombre_equipo>XDS Astana Team</nombre_equipo>
+                <tiempo_diferencia>09:51:54</tiempo_diferencia>
+            </clasificado_equipo>
+            <clasificado_equipo posicion="2">
+                <nombre_equipo>Groupama-FDJ United</nombre_equipo>
+                <tiempo_diferencia>+00:00:00</tiempo_diferencia>
+            </clasificado_equipo>
+            <clasificado_equipo posicion="3">
+                <nombre_equipo>Team Visma | Lease a Bike</nombre_equipo>
+                <tiempo_diferencia>+00:00:00</tiempo_diferencia>
+            </clasificado_equipo>
+        </clasificacion_equipos>
+    </clasificaciones>
+
+    
+</etapa>

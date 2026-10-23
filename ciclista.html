@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>LaVuelta2026:Ciclista</title>
+
+    <meta name="author" content="Lucas Ley Berbén" />
+    <meta name="description" content="Documento ciclista.html del proyecto LaVuelta2026" />
+    
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <!--Enlace a las hojas de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+     <link rel="icon" href="multimedia/favicon.ico">
+</head>
+
+<body>
+      <header>
+   <h1><a href="index.html" title="Página principal de LaVuelta2026">LaVuelta2026</a></h1>
+    <nav>
+        <a href="index.html" title="Página de inicio del proyecto LaVuelta2026">Inicio</a>
+       <a href="ciclista.html" title="Información detallada sobre el ciclista asignado" aria-current="page">Ciclista</a>
+        <a href="equipo.html" title="Información sobre el equipo ciclista">Equipo</a>
+        <a href="etapa.html" title="Datos técnicos y recorrido de la etapa">Etapa</a>
+        <a href="meteorologia.html" title="Información meteorológica de la carrera">Meteorología</a>
+        <a href="clasificaciones.html" title="Tablas de clasificaciones oficiales">Clasificaciones</a>
+        <a href="juegos.html" title="Juego de preguntas interactivo sobre la etapa">Juegos</a>
+        <a href="ayuda.html" title="Documentación de ayuda y navegación">Ayuda</a>
+    </nav>
+</header>
+<nav aria-label="migas">
+    <ol>
+        <li><a href="index.html" title="Volver al inicio">Inicio</a></li>
+        <li>|</li>
+        <li>Ciclista</li>
+    </ol>
+</nav>
+<main>
+     <h2>Moritz Kretschy</h2>
+        <section>
+            <h3>Datos personales</h3>
+            <ul>
+                <li>Moritz Kretschy</li>
+                <li>12 de mayo de 2002</li>
+                <li>Alemania</li>
+                <li>NSN CYCLING TEAM</li>
+                <li>Dorsal 115</li>
+            </ul>
+            <picture>
+          <source srcset="multimedia/ciclista_movil.png"  media="(max-width: 768px)" 
+          width="150" height="227" />
+          <source srcset="multimedia/ciclista_tablet.png" media="(max-width: 1024px)"
+          width="200" height="303"/>
+          <img src="multimedia/ciclista.png" alt="Fotografía oficial de Moritz Kretschy" width="300" height="455" />
+           </picture>
+        </section>
+
+    <section>
+    <h3>Datos equipos</h3>
+    <ol>
+        <li>NSN Cycling Team (2025 - Presente)</li>
+        <li>Israel - Premier Tech Academy / Development Team (2023 - 2024)</li>
+        <li>Rad-net Rose Team (2021 - 2022)</li>
+    </ol>
+</section>
+
+   <section>
+    <h3>Temporada 2025</h3>
+<table>
+    <caption>Resultados deportivos de Moritz Kretschy</caption>
+    <thead>
+        <tr>
+            <th scope="col" id="concepto">Concepto</th>
+            <th scope="col" id="resultado">Dato / Resultado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row" id="podios">Podios (Tour de Taiwán)</th>
+            <td headers="resultado podios">2º puesto</td>
+        </tr>
+        <tr>
+            <th scope="row" id="victorias">Victorias (Alpes Isère)</th>
+            <td headers="resultado victorias">2 etapas</td>
+        </tr>
+        <tr>
+            <th scope="row" id="campeonato">Cto. Alemania CRI</th>
+            <td headers="resultado campeonato">Élite</td>
+        </tr>
+        <tr>
+            <th scope="row" id="carreras">Sibiu Cycling Tour</th>
+            <td headers="resultado carreras">Alta montaña</td>
+        </tr>
+        <tr>
+            <th scope="row" id="equipo">Contrato Pro</th>
+            <td headers="resultado equipo">NSN (2026)</td>
+        </tr>
+    </tbody>
+</table>
+</section>
+
+<section>
+    <h3>Multimedia</h3>
+    <p>Equipo <a href="https://www.lavuelta.es/es/equipo/NSN/nsn-cycling-team">NSN Cycling Team</a> en la Vuelta Ciclista a España 2026.</p>
+    
+   
+    <video controls  poster="multimedia/poster_equipo.png">
+        <source src="multimedia/presentacion.webm" type="video/webm" />
+        <source src="multimedia/presentacion.mp4" type="video/mp4" />
+        
+        
+    </video>
+
+   
+    <audio controls>
+        <source src="multimedia/historia_nsn.mp3" type="audio/mpeg" />
+        <source src="multimedia/historia_nsn.wav" type="audio/wav" />
+       
+        
+    </audio>
+</section>
+</main>
+ <footer>
+  <p>Lucas Ley Berbén</p>
+  <address>
+    <a href="mailto:UO295228@uniovi.es">UO295228@uniovi.es</a>
+  </address>
+</footer>   
+    
+</body>
+</html>

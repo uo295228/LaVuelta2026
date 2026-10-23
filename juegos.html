@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>LaVuelta2026: Juegos</title>
+
+ <meta name="author" content="Lucas Ley Berbén" />
+    <meta name="description" content="Documento juegos.html del proyecto LaVuelta2026" />
+   
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <!--Enlace a las hojas de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="icon" href="multimedia/favicon.ico">
+</head>
+
+<body>
+      <header>
+    <h1><a href="index.html" title="Página principal de LaVuelta2026">LaVuelta2026</a></h1>
+    <nav>
+        <a href="index.html" title="Página de inicio del proyecto LaVuelta2026">Inicio</a>
+        <a href="ciclista.html" title="Información detallada sobre el ciclista asignado">Ciclista</a>
+        <a href="equipo.html" title="Información sobre el equipo ciclista">Equipo</a>
+        <a href="etapa.html" title="Datos técnicos y recorrido de la etapa">Etapa</a>
+        <a href="meteorologia.html" title="Información meteorológica de la carrera">Meteorología</a>
+        <a href="clasificaciones.html" title="Tablas de clasificaciones oficiales">Clasificaciones</a>
+        <a href="juegos.html" title="Juego de preguntas interactivo sobre la etapa" aria-current="page">Juegos</a>
+        <a href="ayuda.html" title="Documentación de ayuda y navegación">Ayuda</a>
+    </nav>
+</header>
+<nav aria-label="migas">
+    <ol>
+        <li><a href="index.html" title="Volver al inicio">Inicio</a></li>
+        <li>|</li>
+        <li>Juegos</li>
+    </ol>
+</nav>
+<main>
+<h2>Juegos</h2>
+
+
+<section>
+        <h3>¿Conoces la etapa?</h3>
+        <p>Este juego consta de una serie de preguntas sobre la información técnica de la etapa. Pon a prueba tus conocimientos respondiendo a 10 preguntas sobre la etapa.</p>
+        
+        <form>
+            <fieldset>
+                <legend>Etapa 11: Cartagena - Lorca</legend>
+                
+            
+                <p>
+                    <label for="num-etapa">Indique el número de la etapa:</label>
+                    <input id="num-etapa" type="number" min="1" max="21" required />
+                </p>
+
+               
+                <p>
+                    <label for="fecha-etapa">Seleccione la fecha de celebración:</label>
+                    <input id="fecha-etapa" type="date" required />
+                </p>
+
+               
+                <p>
+                    <label for="salida-etapa">Seleccione la ciudad o lugar de salida:</label>
+                    <select id="salida-etapa" required>
+                      <option value="">Seleccione una opción</option>
+                     <option value="monaco">Mónaco</option>
+                     <option value="gruissan">Gruissan</option>
+                     <option value="andorra-la-vella">Andorra la Vella</option>
+                     <option value="falset">Falset</option>
+                     <option value="alcossebre">Alcossebre</option>
+                     <option value="vall-dalba">Vall d'Alba</option>
+                     <option value="pucol">Puçol</option>
+                     <option value="la-vila-joiosa">La Vila Joiosa</option>
+                     <option value="alcaraz">Alcaraz</option>
+                     <option value="cartagena">Cartagena</option>
+                     <option value="vera">Vera</option>
+                     <option value="almunecar">Almuñécar</option>
+                     <option value="jaen">Jaén</option>
+                     <option value="palma-del-rio">Palma del Río</option>
+                     <option value="cortegana">Cortegana</option>
+                     <option value="dos-hermanas">Dos Hermanas</option>
+                     <option value="el-puerto-de-santa-maria">El Puerto de Santa María</option>
+                     <option value="velez-malaga">Vélez-Málaga</option>
+                     <option value="la-calahorra">La Calahorra</option>
+                     <option value="granada">Granada</option>
+                    </select>
+                </p>
+
+                
+               
+
+               
+                <fieldset>
+                    <legend>Tipo de etapa:</legend>
+                    <p>
+                        <input id="tipo-llana" type="radio" name="tipo-etapa" value="llana" />
+                        <label for="tipo-llana">Llana</label>
+                    </p>
+                    <p>
+                        <input id="tipo-media" type="radio" name="tipo-etapa" value="media-montana" />
+                        <label for="tipo-media">Media montaña</label>
+                    </p>
+                    <p>
+                        <input id="tipo-montana" type="radio" name="tipo-etapa" value="montana" />
+                        <label for="tipo-montana">Montaña</label>
+                    </p>
+                    <p>
+                        <input id="tipo-cri" type="radio" name="tipo-etapa" value="cri" />
+                        <label for="tipo-cri">Contrarreloj individual</label>
+                    </p>
+                    <p>
+                        <input id="tipo-cre" type="radio" name="tipo-etapa" value="cre" />
+                        <label for="tipo-cre">Contrarreloj por equipos</label>
+                    </p>
+                </fieldset>
+
+               
+                <fieldset>
+                    <legend>Hitos presentes en la etapa:</legend>
+                    <p>
+                        <input id="hito-puerto" type="checkbox" name="hitos" value="puerto" />
+                        <label for="hito-puerto">Puerto de montaña</label>
+                    </p>
+                    <p>
+                        <input id="hito-especial" type="checkbox" name="hitos" value="especial" />
+                        <label for="hito-especial">Puerto categoría especial</label>
+                    </p>
+                    <p>
+                        <input id="hito-sprint" type="checkbox" name="hitos" value="sprint" />
+                        <label for="hito-sprint">Sprint intermedio</label>
+                    </p>
+                    <p>
+                        <input id="hito-bonif" type="checkbox" name="hitos" value="bonificado" />
+                        <label for="hito-bonif">Sprint bonificado</label>
+                    </p>
+                    <p>
+                        <input id="hito-ninguno" type="checkbox" name="hitos" value="ninguno" />
+                        <label for="hito-ninguno">Sin hitos</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <label for="dureza-etapa">Valore la dureza de la etapa (1 al 10):</label>
+                    <input id="dureza-etapa" type="range" min="1" max="10" />
+                </p>
+
+               
+                <p>
+                    <label for="longitud-etapa">Longitud de la etapa (km):</label>
+                    <input id="longitud-etapa" type="number" step="0.1" min="0" required />
+                </p>
+
+                <p>
+                    <label for="desnivel-etapa">Desnivel acumulado de la etapa (m):</label>
+                    <input id="desnivel-etapa" type="number" min="0" required />
+                </p>
+
+            
+                <p>
+                    <label for="descripcion-etapa">Descripción breve de la etapa:</label>
+                    <textarea id="descripcion-etapa" rows="4" cols="50" maxlength="1000"></textarea>
+                </p>
+
+               
+                <p>
+                    <label for="nombre-participante">Nombre del participante:</label>
+                    <input id="nombre-participante" type="text" required />
+                </p>
+
+                
+                <p>
+                    <button type="submit">Enviar</button>
+                </p>
+
+            </fieldset>
+        </form>
+    </section>
+    </main>
+ <footer>
+  <p>Lucas Ley Berbén</p>
+  <address>
+    <a href="mailto:UO295228@uniovi.es">UO295228@uniovi.es</a>
+  </address>
+</footer>   
+</body>
+</html>
