@@ -1,0 +1,192 @@
+/* ***************************************/
+/*           LaVuelta2026                */
+/*          Estilos layout               */
+/* ***************************************/
+/*    DATOS ESTUDIANTE                   */
+/* --------------------------------------*/
+/*  Nombre y Apellidos:                  */
+/*  Correo electrónico (uniovi):         */
+/*  Grupo de laboratorio:                */
+/* ***************************************/
+/* Tarea 3.2 y 3.3: Convertir la sección de datos personales en contenedor flexible */
+/* Especificidad: 011 */
+section:has(picture) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Tarea 3.4: El título h3 debe ocupar toda la primera fila (100%) */
+/* Especificidad: 012 */
+section:has(picture) h3 {
+    flex-basis: 100%;
+}
+
+/* Tarea 3.5: Reordenar elementos (Picture a la izquierda, ul a la derecha) */
+/* Especificidad: 012 */
+section:has(picture) picture {
+    order: 1;
+}
+
+/* Especificidad: 012 */
+section:has(picture) ul {
+    order: 2;
+    margin-left: 2em;
+}
+/* Tarea 4.1: Convertir la sección multimedia en un contenedor flexible en columna */
+/* Especificidad: 011 */
+section:has(video) {
+    display: flex;
+    flex-direction: column; /*coloca todos los hijos en una columna*/
+    align-items: flex-start;
+}
+
+/* Tarea 4.1: Asegurar que el título h3 multimedia mantenga su presentación */
+/* Especificidad: 012 */
+section:has(video) h3 {
+    width: 100%;
+}
+
+/* Tarea 5.2 y 5.3: Convertir la sección de alineación en un contenedor Grid */
+/* Especificidad: 011 */
+section:has(article + article) { 
+    display: grid; /*convierte la section en una cuadricula */
+    grid-template-columns: repeat(4, 1fr); /*crea 4 columnas de igual tamaño */
+    justify-items: center;
+    align-items: center;
+    gap: 1em; /*separacion un iniforme entre elementos*/
+}
+
+/* Tarea 5.5: El título h3 ocupa toda la primera fila completa (de la línea 1 a la -1) */
+/* Especificidad: 012 */
+section:has(article + article) h3 {
+    grid-column: 1 / -1; /*Hace que el título <h3> comience en la línea vertical número 1 y 
+    llegue hasta el final de la cuadrícula (línea -1), ocupando así toda la primera fila completa
+     y permitiendo que las fichas de los corredores se repartan correctamente en las 4 columnas y 2 filas debajo de él.*/
+}
+
+/* Tarea 6.3: Eliminar los márgenes predeterminados del documento */
+/* Especificidad: 001 */
+body {
+    margin: 0;
+}
+
+/* Tarea 6.2: Crear la estructura general en cuadrícula con áreas para el proyecto */
+/* Especificidad: 001 */
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "cabecera"
+        "migas"
+        "contenido"
+        "pie";
+    grid-template-rows: auto auto 1fr auto;
+}
+
+/* Tarea 6.2: Asignar cada elemento principal a su área correspondiente */
+/* Especificidad: 001 */
+header {
+    grid-area: cabecera;
+}
+
+/* Especificidad: 002 */
+header + nav {
+    grid-area: migas;
+}
+
+/* Especificidad: 001 */
+main {
+    grid-area: contenido;
+}
+
+/* Especificidad: 001 */
+footer {
+    grid-area: pie;
+}
+
+/* Tarea 7.3 y 7.4: Convertir la cabecera en contenedor flexible y distribuir elementos */
+/* Especificidad: 001 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+
+/* Tarea 7.5 y 7.6: Convertir el pie de página en contenedor flexible en columna y centrado */
+/* Especificidad: 001 */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+/* Tarea 9.1: Media query para tabletas (ancho máximo de 1024px) */
+@media screen and (max-width: 1024px) {
+    /* La cuadrícula del equipo pasa a 2 columnas */
+    /* Especificidad: 011 */
+      /* ADVERTENCIA: redefinición de la propiedad con valor original repeat(4, 1fr) */
+    section:has(article + article) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* La cabecera muestra sus elementos en columna */
+    /* Especificidad: 001 */
+    /* ADVERTENCIA: redefinición de la propiedad con valor original row */
+    header {
+        flex-direction: column;
+    }
+
+    /* Opciones del menú de navegación distribuidas homogéneamente */
+    /* Especificidad: 002 */
+    header nav {
+        display: flex;
+        justify-content: space-around; /* Distribuye el espacio disponible */
+        width: 100%;
+        padding-top: 0.5em;
+    }
+}
+
+/* Tarea 9.2: Media query para dispositivos móviles (ancho máximo de 768px) */
+@media screen and (max-width: 768px) {
+  
+    section:has(article + article) {
+    /* La cuadrícula del equipo pasa a 1 sola columna */
+    /* ADVERTENCIA: redefinición de la propiedad con valor original repeat(4, 1fr) */
+    /* Especificidad: 011 */
+        grid-template-columns: 1fr;
+    }
+
+    /* Las migas de pan no deben visualizarse en dispositivos móviles */
+    /* ADVERTENCIA: redefinición de la propiedad con valor original block */
+    /* Especificidad: 002 */
+    header + nav {
+        display: none;
+    }
+
+    /* Opciones del menú de navegación principal en columna */
+    /* Especificidad: 002 */
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em; /* Separación opcional */
+    }
+}
+
+/* Especificidad: 001 */
+video, picture img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Especificidad: 001 */
+audio {
+    width: 100%;
+    max-width: 600px;
+}
+
+
