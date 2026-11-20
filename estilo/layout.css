@@ -9,7 +9,7 @@
 /*  Grupo de laboratorio:                */
 /* ***************************************/
 /* Tarea 3.2 y 3.3: Convertir la sección de datos personales en contenedor flexible */
-/* Especificidad: 011 */
+/* Especificidad: 002 */
 section:has(picture) {
     display: flex;
     flex-wrap: wrap;
@@ -17,24 +17,24 @@ section:has(picture) {
 }
 
 /* Tarea 3.4: El título h3 debe ocupar toda la primera fila (100%) */
-/* Especificidad: 012 */
+/* Especificidad: 003 */
 section:has(picture) h3 {
     flex-basis: 100%;
 }
 
 /* Tarea 3.5: Reordenar elementos (Picture a la izquierda, ul a la derecha) */
-/* Especificidad: 012 */
+/* Especificidad: 003 */
 section:has(picture) picture {
     order: 1;
 }
 
-/* Especificidad: 012 */
+/* Especificidad: 003 */
 section:has(picture) ul {
     order: 2;
     margin-left: 2em;
 }
 /* Tarea 4.1: Convertir la sección multimedia en un contenedor flexible en columna */
-/* Especificidad: 011 */
+/* Especificidad: 002 */
 section:has(video) {
     display: flex;
     flex-direction: column; /*coloca todos los hijos en una columna*/
@@ -42,13 +42,13 @@ section:has(video) {
 }
 
 /* Tarea 4.1: Asegurar que el título h3 multimedia mantenga su presentación */
-/* Especificidad: 012 */
+/* Especificidad: 003 */
 section:has(video) h3 {
     width: 100%;
 }
 
 /* Tarea 5.2 y 5.3: Convertir la sección de alineación en un contenedor Grid */
-/* Especificidad: 011 */
+/* Especificidad: 003 */
 section:has(article + article) { 
     display: grid; /*convierte la section en una cuadricula */
     grid-template-columns: repeat(4, 1fr); /*crea 4 columnas de igual tamaño */
@@ -58,40 +58,41 @@ section:has(article + article) {
 }
 
 /* Tarea 5.5: El título h3 ocupa toda la primera fila completa (de la línea 1 a la -1) */
-/* Especificidad: 012 */
+/* Especificidad: 004 */
 section:has(article + article) h3 {
     grid-column: 1 / -1; /*Hace que el título <h3> comience en la línea vertical número 1 y 
     llegue hasta el final de la cuadrícula (línea -1), ocupando así toda la primera fila completa
      y permitiendo que las fichas de los corredores se repartan correctamente en las 4 columnas y 2 filas debajo de él.*/
 }
 
-/* Tarea 6.3: Eliminar los márgenes predeterminados del documento */
-/* Especificidad: 001 */
-body {
-    margin: 0;
-}
+
 
 /* Tarea 6.2: Crear la estructura general en cuadrícula con áreas para el proyecto */
 /* Especificidad: 001 */
 body {
+    margin: 0;
     min-height: 100vh;
     display: grid;
     grid-template-areas: 
         "cabecera"
+        "buscador"
         "migas"
         "contenido"
         "pie";
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: auto auto auto 1fr auto;
 }
 
-/* Tarea 6.2: Asignar cada elemento principal a su área correspondiente */
 /* Especificidad: 001 */
 header {
     grid-area: cabecera;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
 }
 
 /* Especificidad: 002 */
-header + nav {
+search + nav {
     grid-area: migas;
 }
 
@@ -100,34 +101,68 @@ main {
     grid-area: contenido;
 }
 
-/* Especificidad: 001 */
-footer {
-    grid-area: pie;
-}
-
-/* Tarea 7.3 y 7.4: Convertir la cabecera en contenedor flexible y distribuir elementos */
-/* Especificidad: 001 */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1em;
-}
 
 /* Tarea 7.5 y 7.6: Convertir el pie de página en contenedor flexible en columna y centrado */
 /* Especificidad: 001 */
 footer {
+    grid-area: pie;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 1em;
 }
+/* Especificidad: 002 */
+header nav {
+     display: flex;
+     gap: 0.5em;
+
+}
+
+
+/* Estilos para el contenedor del buscador */
+/* Especificidad: 001 */
+search {
+    grid-area: buscador;
+    justify-self: end; /* Lo pega a la derecha de la pantalla */
+    padding: 0.5em; /* Separación interna */
+    margin: 0.5em 1em; /* Separación con cabecera, migas y borde derecho */
+     border: 0.1em solid ; /* Grosor y color del borde */
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+/* Especificidad: 002 */
+header > button {
+    display: none;
+}
+
+/* Especificidad: 001, 002 */
+video, picture img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Especificidad: 001 */
+audio {
+    width: 100%;
+    max-width: 600px;
+}
+/* P10 Ej 5 - Tarea 7: Visualización del mapa dinámico */
+/* Especificidad: 002 */
+main > div {
+    width: 80%;
+    height:28em;
+    margin: 1em auto;
+}
+
+
 
 /* Tarea 9.1: Media query para tabletas (ancho máximo de 1024px) */
 @media screen and (max-width: 1024px) {
     /* La cuadrícula del equipo pasa a 2 columnas */
-    /* Especificidad: 011 */
+    /* Especificidad: 003 */
       /* ADVERTENCIA: redefinición de la propiedad con valor original repeat(4, 1fr) */
     section:has(article + article) {
         grid-template-columns: repeat(2, 1fr);
@@ -135,7 +170,7 @@ footer {
     
     /* La cabecera muestra sus elementos en columna */
     /* Especificidad: 001 */
-    /* ADVERTENCIA: redefinición de la propiedad con valor original row */
+ 
     header {
         flex-direction: column;
     }
@@ -143,7 +178,7 @@ footer {
     /* Opciones del menú de navegación distribuidas homogéneamente */
     /* Especificidad: 002 */
     header nav {
-        display: flex;
+        
         justify-content: space-around; /* Distribuye el espacio disponible */
         width: 100%;
         padding-top: 0.5em;
@@ -156,37 +191,60 @@ footer {
     section:has(article + article) {
     /* La cuadrícula del equipo pasa a 1 sola columna */
     /* ADVERTENCIA: redefinición de la propiedad con valor original repeat(4, 1fr) */
-    /* Especificidad: 011 */
+    /* Especificidad: 003 */
         grid-template-columns: 1fr;
     }
 
     /* Las migas de pan no deben visualizarse en dispositivos móviles */
-    /* ADVERTENCIA: redefinición de la propiedad con valor original block */
+    
     /* Especificidad: 002 */
-    header + nav {
+    search + nav {
         display: none;
     }
 
     /* Opciones del menú de navegación principal en columna */
     /* Especificidad: 002 */
+     /* ADVERTENCIA: redefinición de la propiedad display con valor original flex */
     header nav {
+     display: none;
+      
+    }
+
+    /* Mostramos el botón de hamburguesa */
+    /* Especificidad: 002 */
+    header > button {
+        /* ADVERTENCIA: redefinición de la propiedad display con valor original none */
+        display: block;
+        margin-bottom: 1em;
+        font-size: 1.5em;
+    }
+    
+
+/* Especificidad: 012 */
+    header nav.abierto {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 0.5em; /* Separación opcional */
+        width: 100%;
+        gap: 1em;
+        padding-bottom: 1em;
+    }
+    /* P10 - Tarea 8: Adaptabilidad del carrusel de imágenes en dispositivos móviles */
+    /* Especificidad: 003 */
+    article h2 + img {
+        width: 100%;
+        height: auto;
+    }
+    /* P10 Ej 5 - Tarea 8: Adaptabilidad del mapa dinámico en dispositivos móviles */
+    /* Especificidad: 002 */
+    main > div {
+        /* ADVERTENCIA: redefinición de la propiedad width con valor original 80% */
+        width: 100%;
+        /* ADVERTENCIA: redefinición de la propiedad height con valor original 28em */
+        height: 18em;
     }
 }
 
-/* Especificidad: 001 */
-video, picture img {
-    max-width: 100%;
-    height: auto;
-}
 
-/* Especificidad: 001 */
-audio {
-    width: 100%;
-    max-width: 600px;
-}
 
 

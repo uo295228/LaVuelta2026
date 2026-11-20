@@ -15,12 +15,16 @@
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
 
-    <link rel="icon" href="multimedia/favicon.ico">
+    <link rel="icon" href="multimedia/favicon.ico"/>
+    <script defer src="js/menu.js"></script>
+    <script defer src="js/buscador.js"></script>
 </head>
 
 <body>
    <header>
     <h1><a href="index.html" title="Página principal de LaVuelta2026">LaVuelta2026</a></h1>
+    <button type="button" aria-label="Abrir menú de navegación" aria-expanded="false">☰</button>
+ 
     <nav>
         <a href="index.html" title="Página de inicio del proyecto LaVuelta2026">Inicio</a>
         <a href="ciclista.html" title="Información detallada sobre el ciclista asignado">Ciclista</a>
@@ -32,6 +36,12 @@
         <a href="ayuda.html" title="Documentación de ayuda y navegación" aria-current="page">Ayuda</a>
     </nav>
 </header>
+   <search aria-label="Buscador">
+    <label for="busqueda">
+        <img src="multimedia/buscador.png" alt="icono lupa"/>
+    </label>
+    <input type="search" id="busqueda" aria-label="Buscar" placeholder="Buscar..."/>
+</search>
 <nav aria-label="migas">
     <ol>
         <li><a href="index.html" title="Volver al inicio">Inicio</a></li>
@@ -42,29 +52,29 @@
 
 <main>
     <h2>Ayuda</h2>
- <section>
+<section>
         <h3>Inicio</h3>
-        <p>Página principal del proyecto LaVuelta2026. Actualmente sirve como índice y punto de partida del sitio web.</p>
+        <p>Página de bienvenida del portal LaVuelta2026. En ella podrás disfrutar de una galería fotográfica con imágenes de la carrera que van cambiando automáticamente, además de un apartado con las últimas noticias de actualidad sobre la competición y los equipos participantes, con enlaces directos para leer los artículos completos en la prensa.</p>
     </section>
 
     <section>
         <h3>Ciclista</h3>
-        <p>En esta página encontrarás información detallada sobre Moritz Kretschy. Incluye sus datos personales, una fotografía adaptativa según el dispositivo, su trayectoria en diferentes equipos, una tabla con sus resultados en la temporada 2025 y una zona multimedia con vídeo y audio sobre su equipo, el NSN Cycling Team.</p>
+        <p>Espacio dedicado al corredor Moritz Kretschy. Aquí puedes consultar su ficha personal con fotografía, la lista de equipos en los que ha corrido a lo largo de su trayectoria profesional, un resumen con sus mejores resultados deportivos durante la temporada 2025 y una sección multimedia donde ver el vídeo de presentación y escuchar la historia de su equipo.</p>
     </section>
 
     <section>
         <h3>Equipo</h3>
-        <p>Sección que detalla la alineación oficial del NSN Cycling Team para La Vuelta 2026. Presenta tarjetas individuales para cada uno de los 8 corredores, mostrando su nombre, un icono representativo, su dorsal asignado, fecha de nacimiento y nacionalidad.</p>
+        <p>Muestra toda la información sobre el equipo ciclista NSN Cycling Team. Incluye sus datos generales (país, director deportivo, categoría y enlace a su página oficial en La Vuelta) junto con las fichas individuales de los ocho corredores que forman su alineación oficial, ordenados por su número de dorsal.</p>
     </section>
 
     <section>
         <h3>Etapa</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Permite consultar toda la información detallada de la etapa seleccionando el archivo de datos desde tu dispositivo. Al cargarlo, se muestra un resumen con las características del recorrido (kilómetros, desnivel, coordenadas y enlaces de interés), las clasificaciones finales de la jornada, fotos y vídeos de la etapa, el gráfico con el perfil montañoso y un mapa interactivo donde explorar la ruta desde la salida hasta la meta.</p>
     </section>
 
     <section>
         <h3>Meteorología</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Ofrece información general sobre Cartagena, la ciudad de salida de la etapa (país, gentilicio, número de habitantes y ubicación geográfica). Además, muestra el tiempo meteorológico actual en la localidad en tiempo real, detallando el estado del cielo, la temperatura, la sensación térmica, la humedad, la presión, el viento y las horas de amanecer y atardecer.</p>
     </section>
 
     <section>
@@ -74,12 +84,12 @@
 
     <section>
         <h3>Juegos</h3>
-        <p>En esta sección encontrarás un formulario interactivo titulado "¿Conoces la etapa?". Se trata de un juego que pone a prueba tus conocimientos mediante una serie de preguntas técnicas sobre la etapa, incluyendo su fecha, lugar de salida, tipo de etapa, hitos presentes, longitud, desnivel y una valoración de su dureza.</p>
+        <p>Incluye el cuestionario interactivo "¿Conoces la etapa?", donde podrás poner a prueba lo que sabes respondiendo a 10 preguntas sobre el recorrido (fecha, ciudades de salida y llegada, tipo de etapa, puertos o sprints, distancia y desnivel), además de dar tu opinión sobre su dureza. Al pulsar el botón de enviar, verás al instante los puntos que has conseguido.</p>
     </section>
 
     <section>
         <h3>Ayuda</h3>
-        <p>Este documento proporciona información detallada sobre el contenido, la estructura y la funcionalidad de cada una de las opciones que componen el menú de navegación del proyecto LaVuelta2026.</p>
+        <p>Guía pensada para explicarte qué encontrarás en cada apartado de la web. Además, recuerda que en la parte superior de todas las páginas dispones de un buscador (escribe cualquier palabra y pulsa la lupa o la tecla Intro para resaltarla en amarillo dentro de la página) y, si nos visitas desde un móvil, un botón en la cabecera para desplegar y ocultar cómodamente el menú de navegación.</p>
     </section>
 </main>
    <footer>

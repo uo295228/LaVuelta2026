@@ -66,10 +66,7 @@
     </hitos>
 
 
-   <!-- Puntos anónimos extraídos con alta precisión del itinerario oficial (Pág. 147) -->
-  <!-- Puntos anónimos ampliados al límite de 30 para máxima precisión geográfica -->
-   <!-- Puntos anónimos ajustados estrictamente a tramos de tierra (Libro de Ruta - Etapa 11) -->
-    <!-- Puntos anónimos ajustados milimétricamente al recorrido costero (Los Nietos, Mar Menor) -->
+
     <puntos_anonimos>
         <punto>
             <distancia_salida unidad="km">2.8</distancia_salida>

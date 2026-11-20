@@ -6,20 +6,28 @@
     <meta charset="UTF-8" />
     <title>LaVuelta2026: Etapa</title>
 
-     <meta name="author" content="Lucas Ley Berbén" />
+    <meta name="author" content="Lucas Ley Berbén" />
     <meta name="description" content="Documento etapa.html del proyecto LaVuelta2026" />
-    
-    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--Enlace a las hojas de estilo-->
+<!-- Enlace a las hojas de estilo -->
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
-     <link rel="icon" href="multimedia/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="icon" href="multimedia/favicon.ico" />
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script defer src="js/etapa.js"></script>
+    <script defer src="js/menu.js"></script>
+<script defer src="js/buscador.js"></script>
 </head>
 
 <body>
-     <header>
-   <h1><a href="index.html" title="Página principal de LaVuelta2026">LaVuelta2026</a></h1>
+<header>
+    <h1><a href="index.html" title="Página principal de LaVuelta2026">LaVuelta2026</a></h1>
+    <button type="button" aria-label="Abrir menú de navegación" aria-expanded="false">☰</button>
     <nav>
         <a href="index.html" title="Página de inicio del proyecto LaVuelta2026">Inicio</a>
         <a href="ciclista.html" title="Información detallada sobre el ciclista asignado">Ciclista</a>
@@ -31,6 +39,12 @@
         <a href="ayuda.html" title="Documentación de ayuda y navegación">Ayuda</a>
     </nav>
 </header>
+<search aria-label="Buscador">
+    <label for="busqueda">
+        <img src="multimedia/buscador.png" alt="icono lupa" />
+    </label>
+    <input type="search" id="busqueda" aria-label="Buscar" placeholder="Buscar..." />
+</search>
 <nav aria-label="migas">
     <ol>
         <li><a href="index.html" title="Volver al inicio">Inicio</a></li>
@@ -39,13 +53,15 @@
     </ol>
 </nav>
 <main>
-<h2>Etapa</h2>
+    <h2>Etapa</h2>
+    <label for="archivoXML">Selecciona el archivo xml de la etapa</label>
+    <input type="file" id="archivoXML" accept=".xml" />
 </main>
- <footer>
-  <p>Lucas Ley Berbén</p>
-  <address>
-    <a href="mailto:UO295228@uniovi.es">UO295228@uniovi.es</a>
-  </address>
+<footer>
+    <p>Lucas Ley Berbén</p>
+    <address>
+        <a href="mailto:UO295228@uniovi.es">UO295228@uniovi.es</a>
+    </address>
 </footer>   
 </body>
 </html>

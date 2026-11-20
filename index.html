@@ -14,12 +14,19 @@
     <!--Enlace a las hojas de estilo-->
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
-    <link rel="icon" href="multimedia/favicon.ico">
+    <link rel="icon" href="multimedia/favicon.ico"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script defer src="js/menu.js"></script>
+     <script defer src="js/buscador.js"></script>
+     <script defer src="js/carrusel.js"></script>
+     <script defer src="js/noticias.js"></script>
 </head>
 
 <body>
       <header>
    <h1><a href="index.html" title="Página principal de LaVuelta2026">LaVuelta2026</a></h1>
+   <button type="button" aria-label="Abrir menú de navegación" aria-expanded="false">☰</button>
+ 
     <nav>
         <a href="index.html" title="Página de inicio del proyecto LaVuelta2026" aria-current="page">Inicio</a>
         <a href="ciclista.html" title="Información detallada sobre el ciclista asignado">Ciclista</a>
@@ -31,9 +38,15 @@
         <a href="ayuda.html" title="Documentación de ayuda y navegación">Ayuda</a>
     </nav>
 </header>
+ <search aria-label="Buscador">
+    <label for="busqueda">
+        <img src="multimedia/buscador.png" alt="icono lupa"/>
+    </label>
+    <input type="search" id="busqueda" aria-label="Buscar" placeholder="Buscar..."/>
+</search>
 
 <main>
-<h2>Índice</h2>
+<h2>Inicio</h2>
 </main>
 <footer>
   <p>Lucas Ley Berbén</p>

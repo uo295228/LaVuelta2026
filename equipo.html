@@ -14,12 +14,18 @@
     <!--Enlace a las hojas de estilo-->
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
-     <link rel="icon" href="multimedia/favicon.ico">
+     <link rel="icon" href="multimedia/favicon.ico"/>
+
+     <script defer src="js/equipo.js"></script>
+     <script defer src="js/menu.js"></script>
+     <script defer src="js/buscador.js"></script>
 </head>
 
 <body>
      <header>
    <h1><a href="index.html" title="Página principal de LaVuelta2026">LaVuelta2026</a></h1>
+   <button type="button" aria-label="Abrir menú de navegación" aria-expanded="false">☰</button>
+
     <nav>
         <a href="index.html" title="Página de inicio del proyecto LaVuelta2026">Inicio</a>
         <a href="ciclista.html" title="Información detallada sobre el ciclista asignado">Ciclista</a>
@@ -31,6 +37,12 @@
         <a href="ayuda.html" title="Documentación de ayuda y navegación">Ayuda</a>
     </nav>
 </header>
+ <search aria-label="Buscador">
+    <label for="busqueda">
+        <img src="multimedia/buscador.png" alt="icono lupa"/>
+    </label>
+    <input type="search" id="busqueda" aria-label="Buscar" placeholder="Buscar..."/>
+</search>
 <nav aria-label="migas">
     <ol>
         <li><a href="index.html" title="Volver al inicio">Inicio</a></li>
@@ -45,7 +57,7 @@
 <section>
   <h3>Alineación de corredores</h3>
 
-  <article>
+  <!-- article>
     <h4>Alexey Lutsenko</h4>
     <img src="multimedia/icono.png" alt="Icono de ciclista genérico" width="128" height="128">
     <p>Dorsal: 11</p>
@@ -99,7 +111,7 @@
     <img src="multimedia/icono.png" alt="Icono de ciclista genérico" width="128" height="128">
     <p>Dorsal: 18</p>
     <p>23/06/2001 - Bélgica</p>
-  </article>
+  </article> -->
 
 </section>
 </main>
